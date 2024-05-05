@@ -1,0 +1,92 @@
+---
+---
+
+<header>
+    <div class="interface">
+        <h1>hola</h1>
+        <div class="logo">
+            <a href="#">
+                <img src="logo.png" alt="logo" width="120px"/>
+            </a>
+        </div>
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="btn-contacto">
+            <a href="#">
+                <button>Contacto</button>
+            </a>
+        </div>
+    </div>
+</header>
+
+    <style>
+	body{
+		background-color: #000;
+		height: 100vh;
+	}
+
+	.interface{
+		max-width: 1280px;
+        display: flex;
+        justify-content: center;
+		margin: 0 auto;
+	}
+
+
+	.header{
+		padding: 40px 5%;
+	}
+
+	header > .interface{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+        margin-top: 20px;
+	}
+
+	header a{
+		color: #5c5c5c;
+		text-decoration: none;
+		display: inline-block;
+		transition: .2s;
+	}
+
+	header a:hover{
+		color: #fff;
+		transform: scale(1.05);
+	}
+
+	header nav ul{
+		list-style: none;
+	}
+
+	header nav ul li{
+		display: inline-block;
+		padding: 0 40px;
+        font-size: 20px;
+	}
+
+	.btn-contacto button{
+        margin-right: 40px;
+		padding: 10px 40px;
+		font-size: 18px;
+		font-weight: 600;
+		background-color: #00ff08;
+		border: 0;
+		border-radius: 30px;
+		cursor: pointer;
+		transition: .2s;
+	}
+
+	.btn-contacto button:hover{
+		box-shadow: 0px 0px 8px #00ff0868;
+		transform: scale(1.05);
+	}
+
+</style>

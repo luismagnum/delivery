@@ -1,0 +1,85 @@
+---
+---
+
+<section class="topo-do-site">
+    <div class="interface">
+        <div class="flex">
+            <div class="txt-topo-site">
+                <h1>Delivery, Responsabilidad y Confianza
+                    en todo Villa Regina<span>.</span></h1>
+                <p>Si necesitas rapidez y seguridad, Carlos es el mejor de regina</p>
+                <div class="btn-contacto">
+                    <a href="#">
+                        <button>LLama ya...</button>
+                    </a>
+                </div>
+            </div>
+            <div class="img-topo-site">
+                <img src="hombre.png" alt="hombre">
+            </div>
+        </div>
+    </div>
+</section>
+
+/*section*/
+    <style>
+	section.topo-do-site{
+		padding: 40px 15%;
+	}
+
+	section.topo-do-site .flex{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 80px;
+	}
+
+	.topo-do-site h1{
+		color: #fff;
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.topo-do-site .txt-topo-site h1 span{
+		color: #00ff08;
+	}
+
+	.topo-do-site .txt-topo-site p{
+		color: #fff;
+		margin: 40px 0;
+		font-size: 20px;
+		letter-spacing: .5px;
+	}
+
+	.topo-do-site .img-topo-site img{
+		position: relative;
+		animation: fluctuar 2s ease-in-out infinite alternate;
+	}
+
+    .btn-contacto button{
+		padding: 10px 40px;
+		font-size: 18px;
+		font-weight: 600;
+		background-color: #00ff08;
+		border: 0;
+		border-radius: 30px;
+		cursor: pointer;
+		transition: .2s;
+	}
+
+	.btn-contacto button:hover{
+		box-shadow: 0px 0px 8px #00ff0868;
+		transform: scale(1.05);
+	}
+
+
+	@keyframes fluctuar{
+		0%{
+			top: 0;
+		}
+		100%{
+			top:30px
+		}
+	}
+
+</style>
