@@ -31,78 +31,83 @@ const { title } = Astro.props;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    font-family:"Outfit", sans-serif;
+    scroll-behavior: smooth;
     }
 	.poppins-regular {
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-style: normal;
     }
 
     .poppins-medium {
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 500;
     font-style: normal;
     }
 
     .poppins-semibold {
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 600;
     font-style: normal;
     }
 
     .poppins-bold {
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 700;
     font-style: normal;
     }
 
     .poppins-extrabold {
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 800;
     font-style: normal;
     }
 
     .poppins-black {
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 900;
     font-style: normal;
 }
 
     .poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-style: italic;
     }
 
     .poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 500;
     font-style: italic;
     }
 
    .poppins-semibold-italic {
-   font-family: "Poppins", sans-serif;
+   font-family: "Outfit", sans-serif;
    font-weight: 600;
    font-style: italic;
    }
 
    .poppins-bold-italic {
-   font-family: "Poppins", sans-serif;
+   font-family: "Outfit", sans-serif;
    font-weight: 700;
    font-style: italic;
    }
 
    .poppins-extrabold-italic {
-   font-family: "Poppins", sans-serif;
+   font-family: "Outfit", sans-serif;
    font-weight: 800; 
    font-style: italic;
    }
 
-   .poppins-black-italic {
-   font-family: "Poppins", sans-serif;
-   font-weight: 900;
-   font-style: italic;
-   }
+   body{
+		background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		/*background-color: #000;*/
+		height: 100vh;
+	}
 
    .interface{
 		max-width: 1280px;
@@ -111,4 +116,144 @@ const { title } = Astro.props;
 		margin: 0 auto;
 	}
 
-}
+    .flex{
+        display: flex;
+    }
+
+    section.topo-do-site{
+		padding: 40px 15%;
+	}
+
+	section.topo-do-site .flex{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 80px;
+	}
+
+	.topo-do-site h1{
+		color: #fff;
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.topo-do-site .txt-topo-site h1 span{
+		color: #00ff08;
+	}
+
+	.topo-do-site .txt-topo-site p{
+		color: #fff;
+		margin: 40px 0;
+		font-size: 16px;
+		letter-spacing: .5px;
+		text-align: justify;
+	}
+
+	.topo-do-site .img-topo-site img{
+		position: relative;
+		animation: fluctuar 2s ease-in-out infinite alternate;
+	}
+
+    .btn-contacto button{
+		padding: 10px 40px;
+		font-size: 18px;
+		font-weight: 600;
+		background-color: #00ff08;
+		border: 0;
+		border-radius: 30px;
+		cursor: pointer;
+		transition: .2s;
+	}
+
+	.btn-contacto button:hover{
+		box-shadow: 0px 0px 8px #00ff0868;
+		transform: scale(1.05);
+	}
+
+
+	@keyframes fluctuar{
+		0%{
+			top: 0;
+		}
+		100%{
+			top:30px
+		}
+	}
+
+
+    @media screen and (max-width: 1020px){
+        .flex{
+            flex-direction: column;
+        }
+
+        .img-topo-site img{
+            width: 80%;
+        }
+
+        .topo-do-site .flex{
+            flex-direction: column-reverse;
+        }
+
+        .menu-desktop, .btn-contacto{
+            display: none;
+        }
+
+        .topo-do-site h1{
+            font-size: 20px;
+	    } 
+
+        section.topo-do-site{
+            padding: 20px 7%;
+	    }
+
+        .logo{
+            width: 100%;
+        }
+
+        .logo a img{
+            width: 50%;
+        }
+
+        section.topo-do-site .flex{
+		    gap: 40px;
+	    }
+
+        section.especialidades{
+            padding: 40px 8%;
+        }
+
+        .especialidades .especialidades-box{
+        transform: scale(1.05);
+        box-shadow: 0 0 8px #00ff08;
+    }
+
+        section.sobre{
+            padding: 30px 9%;
+        }
+
+        .txt-sobre p{
+            padding: 20px;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .sobre .txt-sobre h2{
+            font-size: 38px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        section.portfolio{
+            padding: 80px 8%;
+        }
+
+        .img-port{
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+
+    }
+
+    </style>
+

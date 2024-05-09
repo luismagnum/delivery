@@ -1,0 +1,80 @@
+
+<section class="portfolio" id="servicios">
+    <h2 class="titulo">MIS <span>SERVICIOS.</span></h2>
+    <div class="interface">
+        <div class="flex">
+            <div class="img-port" style="background-image: url(/vzla.png);">
+                <div class="overlay">Sabores de Venezuela</div>
+            </div>
+            <div class="img-port" style="background-image: url(/bruna.png);">
+                <div class="overlay">La Bruna vr.</div>
+            </div>
+            <div class="img-port" style="background-image: url(/madi.png);">
+                <div class="overlay">Madisson Resto</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .portfolio .titulo{
+        text-align: center;
+        align-items: center;
+    }
+    .titulo{
+        color: #fff;
+        font-size: 32px;
+    }
+
+    h2.titulo span{
+        color: #00ff08;
+    }
+
+    section.portfolio{
+        padding: 80px 5%;
+        box-shadow: 0 0 40px 10px #00ff081d;
+    }
+
+    section.portfolio .flex{
+        gap: 80px;
+        margin-top: 50px;
+    }
+
+    .img-port{
+        width: 360px;
+        height: 460px;
+        background-color: #00ff08;
+        background-size: cover;
+        background-position: 100% 0;
+        transition: 2s;
+        cursor: pointer;
+        border-radius: 40px;
+        position: relative;
+    }
+
+    .img-port:hover{
+        background-position: 100% 100%;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0f0e0eca;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    .overlay:hover{
+        opacity: 1;
+    }
+</style>
